@@ -1,0 +1,50 @@
+:root {
+  --danger: #e74c3c;
+  --safe: #2ecc71;
+  --dark-blue: #2c3e50;
+}
+
+body {
+  background-color: #ecf0f1;
+  font-family: 'Inter', sans-serif;
+}
+
+.App {
+  padding: 50px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  border-top: 5px solid var(--dark-blue);
+}
+
+.stat-value.critical {
+  color: var(--danger);
+  font-weight: bold;
+}
+
+button {
+  background: var(--dark-blue);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #34495e;
+  transform: scale(1.02);
+}
